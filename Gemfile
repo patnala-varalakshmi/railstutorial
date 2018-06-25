@@ -54,6 +54,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'guard'
+    gem 'guard-minitest'
+  gem 'minitest-reporters', '~> 1.3'
 end
 # Use postgresql as the database for Active Record
 group :production do
