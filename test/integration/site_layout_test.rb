@@ -9,8 +9,6 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]",contact_url
     get contact_url
     assert_select "title", full_title("Contact")
-    get sign_up_url
-    assert_select "title", full_title("Sign Up")
-
+    
   end
 end
